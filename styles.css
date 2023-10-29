@@ -1,5 +1,47 @@
+/*
+Author: Braden Mayfield
+Date: 10/28/23
+*/
+
 :root {
 	--blanks: #905151;
 	--bgs: #D77B7B;
 	--text: #FFF5F5;
+}
+
+html {
+	background-color: #551B1B;
+	box-sizing: border-box;
+	font-family: "Times New Roman";
+}
+
+/*header*/
+
+header > h1 {
+	background-color: var(--bgs);
+	color: var(--text);
+	text-align: center;
+	font-size: 2vmax;
+	border: 2px double #FFFDD0;
+}
+
+/*structure*/
+
+.wrap {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.days {
+	background-color: var(--bgs);
+	color: var(--text);	
+}
+
+ul {
+	list-style: none;
+	display: grid;
+	gap: 5px;
+	grid-template-columns:repeat(5, auto);
+	padding: 0;
+	text-align: center
 }
