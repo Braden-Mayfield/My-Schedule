@@ -15,6 +15,10 @@ html {
 	font-family: "Times New Roman";
 }
 
+.wrap {
+	display: grid;
+}
+
 /*header*/
 
 header > h1 {
@@ -25,23 +29,20 @@ header > h1 {
 	border: 2px double #FFFDD0;
 }
 
-/*structure*/
+/*Table*/
 
-.wrap {
-	display: grid;
-	grid-gap: 20px;
+table {
+	height: 50vmax
 }
 
-.days {
+th {
 	background-color: var(--bgs);
-	color: var(--text);	
+	color: var(--text);
+	border: 2px double #FFFDD0;
+	font-size: 1vmax
 }
 
-ul {
-	list-style: none;
-	display: grid;
-	gap: 5px;
-	grid-template-columns:repeat(5, auto);
-	padding: 0;
-	text-align: center
+.blanks {
+	background-color: var(--blanks);
+	color: var(--text)
 }
